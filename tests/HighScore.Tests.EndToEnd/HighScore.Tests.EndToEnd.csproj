@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <!-- <IsPackable>false</IsPackable> -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../src/HighScore.Api/HighScore.Api.csproj" /> 
+    <ProjectReference Include="../../src/HighScore.Core/HighScore.Core.csproj" />
+    <ProjectReference Include="../../src/HighScore.Infrastructure/HighScore.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.2" />
+     <!--testowanie api w pamieci-->
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.0.1" /> 
+    <!--paczka do serializacji-->
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.03" /> 
+        <!--tworzy atrape obiektu, do testow jednostkowych-->
+    <PackageReference Include="Moq" Version="4.7.145" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <PackageReference Include="FluentAssertions" Version="4.19.4" />
+
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+  </ItemGroup>
+</Project>
